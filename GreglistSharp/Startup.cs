@@ -35,7 +35,10 @@ public class Startup
     services.AddScoped<AccountService>();
 
     services.AddTransient<CarsRepository>();
+    services.AddTransient<JobsRepository>();
+
     services.AddTransient<CarsService>();
+    services.AddTransient<JobsService>();
 
   }
 
